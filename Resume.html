@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Резюме - Ревенок Яромир</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 40px;
+            background-color: #f4f4f4;
+        }
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+        .header {
+            grid-column: 1 / -1;
+            border-bottom: 2px solid #333;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h1 { margin: 0 0 5px 0; font-size: 32px; }
+        h2 { margin: 0; font-size: 18px; color: #666; font-weight: normal; }
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        .job-title, .project-title {
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+        .date {
+            float: right;
+            color: #888;
+            font-weight: normal;
+            font-size: 13px;
+        }
+        ul { margin-top: 5px; margin-bottom: 15px; padding-left: 20px; }
+        li { margin-bottom: 5px; font-size: 14px; line-height: 1.4; }
+        p { font-size: 14px; line-height: 1.5; margin-top: 5px; }
+        .right-col { border-left: 1px solid #ccc; padding-left: 25px; }
+        .contact-item { margin-bottom: 8px; font-size: 14px; }
+        .photo {
+            width: 120px;
+            height: 120px;
+            background-color: #ddd;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 12px;
+            text-align: center;
+        }
+        @media print {
+            body { background: white; padding: 0; }
+            .resume-container { box-shadow: none; padding: 0; max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        
+        <div class="header">
+            <div>
+                <h1>Ревенок Яромир</h1>
+                <h2>Frontend-разработчик (React / TypeScript)</h2>
+                <p style="margin-top: 10px; font-size: 13px;">Город: Санкт-Петербург | Готов к удаленной работе</p>
+            </div>
+        </div>
+        <div class="left-col">
+            <div class="section-title">О себе</div>
+            <p>Студент 3 курса [Название вуза]. Имею опыт разработки учебных и pet проектов на React и TypeScript. Знаком с Python и ООП. Ищу позицию стажера или джуниора для применения своих навыков в коммерческой разработке.</p>
+
+            <div class="section-title">Проекты</div>
+            
+            <div class="project-title">Fullstack-приложение для управления заявками <span class="date">Октябрь 2026</span></div>
+            <ul>
+                <li>Разработал клиентскую часть (SPA) на React с использованием TypeScript и React Router.</li>
+                <li>Реализовал аутентификацию на основе JWT-токенов (хранение в localStorage, React Context).</li>
+                <li>Настроил взаимодействие с REST API на FastAPI (логин, регистрация, CRUD заявок).</li>
+                <li>Обработал состояния загрузки и ошибок, реализовал подтверждение удаления.</li>
+                <li><i>Стек: React, TS, FastAPI, REST API.</i></li>
+                <li><i>GitHub: github.com/yaromirgames60-tech/integracion</i></li>
+            </ul>
+
+            <div class="project-title">CI/CD Пайплайн <span class="date">Сентябрь 2026</span></div>
+            <ul>
+                <li>Настроил пайплайн непрерывной интеграции на GitHub Actions для авто-запуска тестов при коммите.</li>
+                <li>Написал unit-тесты на Python (unittest) для валидации HTML.</li>
+                <li><i>Стек: CI/CD, GitHub Actions, Python, Git.</i></li>
+                <li><i>GitHub: github.com/yaromirgames60-tech/ci-cd</i></li>
+            </ul>
+
+            <div class="section-title">Образование</div>
+            <div class="project-title">[Колледж ITHUB] <span class="date">2024 – 2026 (Окончание в 2027)</span></div>
+            <p>Специальность «Веб разработка: Фронтэнд разработчик», 3 курс</p>
+        </div>
+
+        <div class="right-col">
+
+            <div class="section-title">Контакты</div>
+            <div class="contact-item">+7 (989) 357-12-91</div>
+            <div class="contact-item">RevenokYaS24@spb.ithub.ru</div>
+            <div class="contact-item">github.com/yaromirgames60-tech</div>
+
+            <div class="section-title">Языки</div>
+            <ul>
+                <li>🇷🇺 Русский — Родной</li>
+                <li>🇬🇧 Английский — B1</li>
+                <li>🇯🇵 Японский — Начальный (Активно изучаю)</li>
+                <li>🇪🇸 Испанский, 🇩🇪 Немецкий — Базовые</li>
+            </ul>
+
+            <div class="section-title">Навыки</div>
+            <ul>
+                <li>HTML5, CSS3</li>
+                <li>JavaScript, TypeScript</li>
+                <li>React, React Router, Context API</li>
+                <li>Python, FastAPI</li>
+                <li>Git, GitHub, GitHub Actions</li>
+                <li>Docker, SQL, PostgreSQL</li>
+                <li>ООП, REST API</li>
+                <li>C++, C# (базовые знания)</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>
